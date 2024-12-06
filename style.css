@@ -3,6 +3,9 @@
 
     }
     body {
+      background-image: url("body_background.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
       font-size: 28px;
       margin: 0;
       line-height: 1.5;
@@ -14,14 +17,17 @@
        
       
       .header {
+        background-color: rgba(0, 0, 0, 0.6);
+        color: whitesmoke;
         grid-area:header;
         text-align: center;
-        background-color: #c3c3fc;
+        background-image: url();
+        position: relative;
       }
+      
       .menu {
         grid-area:menu;
         padding: 30px;
-
       }
       .main {
         grid-area:main;
@@ -39,7 +45,6 @@
       }
 
       .grid-container {
-      background-image: linear-gradient(rgb(134, 88, 241) , rgb(48, 165, 122) , rgb(134, 88, 241));
       display: grid;
       grid-template-columns:  30% auto auto auto auto;
       grid-template-areas: 'header header header header header' 'menu main main main side' 'footer footer footer footer footer'; 
@@ -50,7 +55,7 @@
         list-style-type: none;
         padding: 0;
         margin: 0;
-        background-color: grey;
+        background-color: rgba(152, 72, 255, 0.8);
         border-radius: 6px;
         box-shadow: 2px 2px 15px 4px rgba(0, 0, 0, 0.4);
       }
@@ -75,9 +80,12 @@
         border: 3px solid #c3c3fc;
 
       }
+      input[type="submit"] {
+        width: 150px;
+      }
       .card {
         width: 100%;
-         background-color: #f9f9f9;
+         background-color: rgba(255, 255, 254, 0.8);
          padding: 20px;
          border-radius: 6px;
 
@@ -90,6 +98,11 @@
         opacity: 0.6;
       }
       @media screen and (max-width: 992px) {
+        body {
+          background-image: url("body_background_mobile.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
         .grid-container {
           grid-template-areas: 'header header header header header'  'menu menu main main main'  'menu menu side side side' 'footer footer footer footer footer';
           grid-template-columns:  auto auto auto auto auto;
@@ -101,5 +114,6 @@
         }
         .menu {
           text-align: center;
+
         }
       }
