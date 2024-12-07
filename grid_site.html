@@ -5,9 +5,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
   <body>
     <div class="grid-container">
+          <ul class="navbar">
+            <li><span class="material-icons" style="transform: translate(0, 25%);">home</span>Home</li>
+            <li><span class="material-icons" style="transform: translate(0, 25%);">settings</span>Settings</li>
+            <li><span class="material-icons" style="transform: translate(0, 25%);">person</span>Account</li>
+            <li class="search" style="float: right;">
+              <form class="nine">
+                <input type="text" name="search" placeholder="Search..." style="padding: 5px;">
+              </form>
+            </li>
+          </ul>
       <div class="header">
           <h1>Website</h1>
           <p>Created using the Grid Layout Module</p>
@@ -16,22 +27,14 @@
         <ul>
           <li>Main</li>
           <li>Login</li>
+          <li>Photo</li>
+          <li>Video</li>
+          <li>Music</li>
+          <li>Login</li>
           <li>My photo</li>
+          <li>Main</li>
           <li>About</li>
         </ul>
-        <br>
-        <div class="card">
-          <form>
-            <fieldset>
-              <legend>Fill out the form</legend>
-              <label for="fname">Enter Firstname:</label><br><br>
-              <input type="text" id="fname" name="firstname" placeholder="Ivan"><br><br>
-              <label for="lname">Enter Lastname:</label><br><br>
-              <input type="text" id="lname" name="lastname" placeholder="Ivanov"><br><br>
-              <input type="submit" name="submit" value="submit">
-            </fieldset>
-          </form>
-        </div>
       </div>
       <div class="main">
         <div class="card">
@@ -45,9 +48,20 @@
       <div class="side">
         <div class="card">
           <h2>Side</h2>
-          <a href="img2.jpg" target="_blank">
-            <img src="img2.jpg">
-          </a>
+          <div class="dropdown">
+              <img src="foto3.jpg" alt="image-small" >
+              <div class="dropdown-content">
+                <img src="foto3.jpg">
+                <div class="name">The forest</div>
+              </div>
+          </div>
+          <div class="dropdown">
+              <img src="img2.jpg" alt="image-small" >
+              <div class="dropdown-content">
+                <img src="img2.jpg">
+                <div class="name">The mountains</div>
+              </div>
+          </div>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
         </div></div>
       <div class="footer">
