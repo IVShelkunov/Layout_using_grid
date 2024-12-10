@@ -6,16 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Dancing Script|Roboto">
   </head>
   <body>
     <div class="grid-container">
           <ul class="navbar">
-            <li><span class="material-icons" style="transform: translate(0, 25%);">home</span>Home</li>
-            <li><span class="material-icons" style="transform: translate(0, 25%);">settings</span>Settings</li>
-            <li><span class="material-icons" style="transform: translate(0, 25%);">person</span>Account</li>
+            <li class="nav"><span class="material-icons" style="transform: translate(0, 25%);">home</span><span class="home">Home</span></li>
+            <li class="nav"><span class="material-icons" style="transform: translate(0, 25%);">settings</span><span class="setting">Settings</span></li>
+            <li class="nav"><span class="material-icons" style="transform: translate(0, 25%);">person</span><span class="account">Account</span></li>
             <li class="search" style="float: right;">
               <form class="nine">
-                <input type="text" name="search" placeholder="Search..." style="padding: 5px;">
+                <div class="form">
+                  <span class="material-icons" style="transform: translate(5px , 5px);">search</span>
+                  <input type="text" name="search" placeholder="Search..." style="padding: 5px;">
+                  <input type="submit" value="search">
+                </div>
               </form>
             </li>
           </ul>
@@ -32,17 +37,26 @@
           <li>Music</li>
           <li>Login</li>
           <li>My photo</li>
-          <li>Main</li>
+          <li>Blog</li>
           <li>About</li>
         </ul>
       </div>
       <div class="main">
-        <div class="card">
-          <h2>Main</h2>
-          <a href="img1.jpg" target="_blank">
-            <img src="img1.jpg">
-          </a>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <div class="content">
+          <div class="card">
+            <h2>Main</h2>
+            <a href="img1.jpg" target="_blank">
+              <img src="img1.jpg">
+            </a>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          </div>
+          <div class="card">
+            <h2>Main</h2>
+            <a href="foto4.jpg" target="_blank">
+              <img src="foto4.jpg">
+            </a>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          </div>
         </div>
       </div>  
       <div class="side">
@@ -65,8 +79,15 @@
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
         </div></div>
       <div class="footer">
-        <p>© 2024 Илья Шелкунов.</p>
+        <p>© 2024 Ilya Shelkunov.</p>
         <p>E-mail: Shelkunow48@gmail.com</p>
+        <div id="social">
+            <a href="#" title="instagram" id="instagram"></a>
+            <a href="#" title="telegramm" id="telegramm"></a>
+            <a href="#" title="whatsapp" id="whatsapp"></a>
+            <a href="#" title="facebook" id="facebook"></a>
+          </ul>
+        </div>
       </div>
     </div>
   </body>
